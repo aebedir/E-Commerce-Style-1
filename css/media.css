@@ -16,6 +16,10 @@
     .search a{
         display: block;
     }
+    .tooltip i{
+        font-size: 30px;
+    }
+    
 }   
 @media screen and (max-width:676px) {    
     .header-top p{
@@ -33,7 +37,11 @@
     .menu a{
         display: inline-block;
         padding: 20px;
-    }            
+    }     
+    .tooltip i{
+        font-size: 25px;
+    }       
+    
 }
 @media screen and (max-width:290px) {
         .header-center {

@@ -8,6 +8,8 @@ html {
 }
 body {
     background-color: rgba(128, 128, 128, 0.1);
+    height: 100vh;
+    position: relative;
 }
 img{
     width: 100%;            
@@ -82,4 +84,37 @@ img{
 }  
 .menu a{
     display: none;
+}
+.header-bottom .sepet {
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
+}  
+.header-bottom .wp {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+} 
+         
+.tooltip {
+    position: relative;
+    display: inline-block;            
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    right: 10px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
