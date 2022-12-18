@@ -6,6 +6,9 @@
     .slide {        
         width: 90%;           
     }
+    .categories{
+        width: 90%;
+    }
 }
 @media  screen and (max-width:1130px) {
     .header-center {
@@ -13,6 +16,9 @@
     }
     .slide {        
         width: 100%;           
+    }
+    .categories{
+        width: 100%;
     }
 }
 @media screen and (max-width:1010px) {
@@ -25,6 +31,13 @@
     .tooltip i{
         font-size: 30px;
     }
+    .categories{
+        justify-content: space-evenly;
+    }
+    .kasnak,.ip,.boya,.firca {
+        width: 40%;
+        margin-bottom: 20px;
+    }   
     
 }   
 @media screen and (max-width:676px) {    
@@ -49,6 +62,10 @@
     }      
     .slide img{        
         height: 300px;           
+    } 
+    .kasnak,.ip,.boya,.firca {
+        width: 60%;
+        margin-bottom: 20px;
     } 
     
 }
