@@ -19,7 +19,15 @@
     }
     .categories{
         width: 100%;
+        justify-content: space-evenly;
     }
+    .categories-items {
+        width: 35%;
+    }
+    .items {
+        height: 400px;
+    }
+    
 }
 @media screen and (max-width:1010px) {
     .header-center__center {
@@ -38,11 +46,18 @@
         width: 40%;
         margin-bottom: 20px;
     }   
+    .items {
+        height: 400px;
+    }
+    .categories-items {
+        width: 35%;
+    }
     
 }   
 @media screen and (max-width:676px) {    
     .header-top p{
         font-size: 15px;
+        padding: 15px;
     }
     .header-center {
         justify-content: space-evenly;                
@@ -50,7 +65,10 @@
     .header-center__left {
         width: 20%;
     }
-    .header-center__right a{
+    .header-center__right{
+        flex-direction: column;
+    }
+    .header-center__right li:not(.menu){        
         display: none;
     }
     .menu a{
@@ -63,11 +81,29 @@
     .slide img{        
         height: 300px;           
     } 
+    .items {
+        height: 400px;
+    }
+    .categories-items {
+        width: 60%;        
+    }
+    .item-image img{
+        height: 280px;
+    }
     .kasnak,.ip,.boya,.firca {
         width: 60%;
         margin-bottom: 20px;
     } 
+    .footer i{
+        display: block;
+        margin-bottom: 5px;
+    }
     
+}
+@media  screen and (max-width: 460px) {
+    .item-image img{
+        height: 230px;
+    }
 }
 @media screen and (max-width:290px) {
         .header-center {
@@ -82,5 +118,8 @@
         }
         .slide img{            
             height: 200px;           
+        }
+        .item-image img{
+            height: 200px;
         }
 }

@@ -13,7 +13,7 @@ body {
     position: relative;
 }
 img{
-    width: 100%;            
+    width: 100%;               
 }
 
 .center{
@@ -69,6 +69,10 @@ img{
     cursor: pointer;
     box-shadow: 5px 5px 10px black;
 }     
+.header-center__right {
+    display: flex;
+    justify-content: space-evenly;
+}
 .header-center__right a {
     text-decoration: none;
     font-size: 20px;
@@ -92,7 +96,7 @@ img{
 }
 .header-bottom .sepet {
     position: fixed;
-    bottom: 12%;
+    bottom: 14%;
     right: 5%;
     z-index: 1;
 }  
@@ -174,6 +178,8 @@ img{
         font-size: 35px;
         font-weight: bold;
         padding: 40px;
+        color: grey;
+        font-family: rubik,sans-serif;
     }
     .categories{
         width: 80%;
@@ -182,26 +188,31 @@ img{
         justify-content: space-between;    
         flex-wrap: wrap;      
     }
-    .kasnak {
-        width: 20%;
-        height: 250px;
+    .categories-items {
+        width: 23%;
+    }
+    .items {
+        width: 100%;
+        height: 400px;
         border: solid 1px black;
     }
-    .ip {
-        width: 20%;
-        height: 250px;
-        border: solid 1px black;
+    .categories-items h3{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
     }
-    .boya {
-        width: 20%;
-        height: 250px;
-        border: solid 1px black;
+    .item-image img {
+        height: 250px;        
     }
-    .firca {
-        width: 20%;
-        height: 250px;
-        border: solid 1px black;
+    .item-content p{
+        font-size: 16px;
+        padding: 5px;
     }
+
+
+
     .footer {
         margin-top: 50px;
         width: 100%;        
