@@ -9,7 +9,9 @@
     .categories,.details{
         width: 90%;
     }
-    
+    .container {
+        width: 90%;
+    }
 }
 @media  screen and (max-width:1130px) {
     .header-center {
@@ -23,10 +25,13 @@
         justify-content: space-evenly;
     }
     .categories-items,.details-items {
-        width: 35%;
+        width: 300px;
     }
     .items {
         height: 400px;
+    }
+    .container{
+        width: 100%;
     }
     
     
@@ -50,10 +55,10 @@
         margin-bottom: 20px;
     }   
     .items {
-        height: 400px;
+        height: 450px;
     }
     .categories-items,.details-items {
-        width: 35%;
+        width: 350px;
     }
     
     
@@ -86,14 +91,11 @@
         height: 300px;           
     } 
     .items {
-        height: 400px;
+        height: 450px;
     }
     .categories-items,.details-items {
-        width: 55%;        
-    }
-    .item-image img{
-        height: 280px;
-    }
+        width: 350px;        
+    }    
     .kasnak,.ip,.boya,.firca {
         width: 60%;
         margin-bottom: 20px;
@@ -101,7 +103,21 @@
     .footer i{
         display: block;
         margin-bottom: 5px;
+    }    
+    .container{
+        flex-direction: column;
     }
+    .container-right,.container-left{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .container-left img:hover{
+        transform: scale(1);
+    }
+    .container-right button{
+        width: 100%;
+    }
+        
     
 }
 @media  screen and (max-width: 460px) {
@@ -122,8 +138,5 @@
         }
         .slide img{            
             height: 200px;           
-        }
-        .item-image img{
-            height: 200px;
-        }
+        }        
 }

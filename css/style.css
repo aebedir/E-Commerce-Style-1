@@ -26,6 +26,7 @@ img{
     font-size: 25px;                      
 }
 .header-top p{
+    letter-spacing: 2px;
     padding: 10px;
     font-family: rubik,sans-serif;
 }
@@ -148,6 +149,20 @@ img{
     margin: auto;
     animation: slide 20s 2s infinite alternate;            
 }
+.header-top p {
+    animation: yanson 2s  infinite;
+}
+@keyframes yanson{
+    0%{
+        color: black;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: black;
+    }
+}
 @keyframes slide {
     0% {
         transform: translate(0);
@@ -198,7 +213,7 @@ img{
     }
     .categories-items, .details-items {
         padding: 5px;
-        width: 23%;
+        width: 250px;
         transition: .5s;
     }
     .items {
@@ -230,7 +245,62 @@ img{
         padding: 5px;
         text-align: center;
     }
+    /* İtem-Detail Sayfası */
 
+    .container {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .container-left {
+        width: 45%;
+        padding: 100px 25px ;
+    }
+    .container-left img{
+        transition: .7s;
+        border-radius: 10px;
+    }
+    .container-left img:hover{
+        transform: scale(1.5);
+    }
+    .container-right{
+        width: 45%;        
+        margin: 100px 25px;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+   }
+    .container-right p,h3 {
+         padding: 15px 10px;
+   }
+    .container-right p{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+   }
+    .container-right button {
+        width: 120px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #ff6000;
+        transition: .5s;
+        font-weight: bold;
+        font-size: 15px;        
+   }
+    .container-right button:hover{        
+        border: solid 1px black;
+        box-shadow: 5px 5px 10px black;
+   }
+   .new-price p{
+    font-size: 17px;
+    font-weight: bold;
+   }
+
+
+    /* Footer */
     .footer {
         margin-top: 50px;
         width: 100%;        
