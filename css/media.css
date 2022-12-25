@@ -33,6 +33,9 @@
     .container{
         width: 100%;
     }
+    .contact {
+        width: 80%;
+    }
     
     
     
@@ -60,6 +63,21 @@
     .categories-items,.details-items {
         width: 350px;
     }
+    .contact{
+        width: 80%;
+        flex-direction: column;
+    }
+    .contact-left-button{  
+        display: block;      
+        width: 80%;       
+        margin: auto;
+        margin-bottom: 20px;        
+    }
+    .contact-left,.contact-right{
+        width: 100%;
+        margin: auto;
+    }
+   
     
     
 }   
@@ -106,17 +124,29 @@
     }    
     .container{
         flex-direction: column;
+        align-items: center;
     }
     .container-right,.container-left{
-        width: 100%;
+        width: 90%;
         margin-top: 10px;
+        margin: auto;
     }
     .container-left img:hover{
         transform: scale(1);
     }
     .container-right button{
-        width: 100%;
+        width: 90%;
+        margin: auto;
+        margin: 20px;
     }
+    .contact {
+        width: 90%;
+    }
+    .contact-left,.contact-right{
+        width: 100%;
+        margin: auto;
+    }
+    
         
     
 }
